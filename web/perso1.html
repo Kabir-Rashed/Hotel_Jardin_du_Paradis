@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page PERSO No 1</title>
+	<link rel="stylesheet" href="../css/style4.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Section de la barre de navigation (Navbar) -->
+	<nav class="navbar">
+		<div class="main_menu">
+			<div class="logo">
+				<a href="../index.html">
+					<img class="logo" src="../pictures/logo.svg" alt="logo du Hotel">
+					<!-- Le logo a été conçu par moi. L'icône de l'arbre a été utilisée gratuitement et sans licence, disponible sur Canva.com -->
+				</a>
+			</div>
+			<div>
+				<ul id="menuList" class="menu">
+					<li><a href="../index.html">Accueil</a></li>
+					<li>
+						<a href="#">Services</a>
+						<ul class="submenu">
+							<li><a href="#">Chambres & Tarifs (Page PERSO No 1)</a></li>
+							<li><a href="/web/personelle.html">Offre Spécial (Page PERSONELLE)</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">À propos</a>
+						<ul class="submenu">
+							<li><a href="/web/perso2.html">Notre histoire (Page PERSO 2)</a></li>
+							<li><a href="/web/caracteristiques.html">Page CARACTÉRISTIQUES</a></li>
+						</ul>
+					</li>
+					<li><a href="../web/contact.html">Contactez-nous</a></li>
+				</ul>
+				<div class="menu-icon">
+					<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Section Contenu Principal -->
+	<main>
+		<header>
+			<h1>Chambres et Tarifs</h1>
+		</header>
+
+		<section class="formatted-text">
+			<h2>Bienvenue</h2>
+			<p><strong>Bienvenue chez Jardin du Paradis !</strong> Situé au <em>cœur</em> de la ville, notre hôtel offre des services d’excellence pour rendre votre séjour inoubliable. Que vous voyagiez pour <small>affaires</small> ou pour le <i>plaisir</i>, nous sommes prêts à vous accueillir avec tout ce dont vous avez besoin pour un séjour agréable et mémorable.</p>
+			<p>Découvrez nos <strong>chambres élégamment décorées</strong>, offrant une atmosphère chaleureuse et un confort optimal. Notre <i>restaurant gastronomique</i> vous propose une cuisine raffinée, élaborée avec des ingrédients locaux de qualité. Profitez également de nos installations modernes, comme le <em>spa</em>, la <small>piscine</small> et le <b>centre de fitness</b>, pour une expérience complète de détente et de bien-être. Ne manquez pas nos <i>offres spéciales</i>, disponibles toute l’année pour enrichir votre séjour à un tarif avantageux. <strong>Réservez dès maintenant</strong> et laissez-nous transformer votre visite en un moment inoubliable !</p>
+		</section>
+	</main>
+
+	<!-- Section Tarifs -->
+	<section id="Tarifs" class="table-section">
+		<div class="text_tarif">
+			<h2>Nos Tarifs</h2>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>Type de Chambre</th>
+					<th>Capacité</th>
+					<th>Équipements</th>
+					<th>Prix par Nuit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Chambre Simple</td>
+					<td>1 Personne</td>
+					<td>Wi-Fi, Télévision</td>
+					<td>100 CHF</td>
+				</tr>
+				<tr>
+					<td>Chambre Double</td>
+					<td>2 Personnes</td>
+					<td>Wi-Fi, Télévision, Mini-bar</td>
+					<td>150 CHF</td>
+				</tr>
+				<tr>
+					<td>Suite Luxe</td>
+					<td>4 Personnes</td>
+					<td>Wi-Fi, Télévision, Mini bar, Jacuzzi</td>
+					<td>300 CHF</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<!-- Section Galerie -->
+	<section class="image-gallery">
+		<div class="text_gallerie">
+			<h2>Galerie</h2>
+		</div>
+		<div class="gallery">
+			<div class="gallery-item">
+				<h3>Chambre Simple</h3>
+				<img src="../pictures/hotel_chambre.jpg" alt="Chambre Simple">
+				<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [Pixabay]. -->
+			</div>
+			<div class="gallery-item">
+				<h3>Chambre Double</h3>
+				<img src="../pictures/chambre_2.jpg" alt="Chambre Double">
+				<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [Bruce Clark]. -->
+			</div>
+			<div class="gallery-item">
+				<h3>Suite Luxe</h3>
+				<img src="../pictures/chambre_3.jpg" alt="Suite Luxe">
+				<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [Pixabay]. -->
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Explorez Plus -->
+	<section class="anchors">
+		<h2>Explorez Plus</h2>
+		<ul>
+			<li><a href="#Tarifs">Voir nos Tarifs</a></li>
+			<li><a href="../index.html">Page Accueil</a></li>
+			<li><a href="../web/contact.html">Contactez-nous</a></li>
+		</ul>
+	</section>
+
+	<!-- Section Pied de Page -->
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer_gauche">
+				<p>&copy; 2024 Hotel Jardin du Paradis. Tous droits réservés.</p>
+			</div>
+			<div class="footer_droit">
+				<ul>
+					<li><a href="mailto:ahmad.kabir@eduvaud.ch">Contact Webmaster</a></li>
+					<li><a href="#">Impressum</a></li>
+					<li><a href="#">Conditions d'utilisation</a></li>
+					<li><a href="#">Protection des données</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Script JavaScript pour l'icône hamburger (menu responsive) -->
+	<script>
+		function toggleMenu() {
+			let menuList = document.getElementById("menuList");
+			menuList.classList.toggle("active");
+		}
+	</script>
+</body>
+</html>

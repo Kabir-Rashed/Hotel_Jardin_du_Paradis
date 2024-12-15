@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page ACCUEIL</title>
+	<link rel="stylesheet" href="./css/style1.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Section de la barre de navigation (Navbar) -->
+	<nav class="navbar">
+		<div class="main_menu">
+			<div class="logo">
+				<a href="index.html">
+					<img class="logo" src="./pictures/logo.svg" alt="logo du Hotel">
+					<!-- Le logo a été conçu par moi. L'icône de l'arbre a été utilisée gratuitement et sans licence, disponible sur Canva.com -->
+				</a>
+			</div>
+			<div>
+				<ul id="menuList" class="menu">
+					<li><a href="#">Accueil</a></li>
+					<li>
+						<a href="#">Services</a>
+						<ul class="submenu">
+							<li><a href="/web/perso1.html">Chambres & Tarifs (Page PERSO No 1)</a></li>
+							<li><a href="/web/personelle.html">Offre Spécial (Page PERSONELLE)</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">À propos</a>
+						<ul class="submenu">
+							<li><a href="/web/perso2.html">Notre histoire (Page PERSO 2)</a></li>
+							<li><a href="/web/caracteristiques.html">Page CARACTÉRISTIQUES</a></li>
+						</ul>
+					</li>
+					<li><a href="/web/contact.html">Contactez-nous</a></li>
+				</ul>
+				<div class="menu-icon">
+					<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Section principale avec titre, texte, images et aside pour les publicités -->
+	<main>
+		<section class="section_1">
+			<div class="accueil">
+				<div class="card_1">
+					<h1>Bienvenue Chez Jardin du Paradis</h1>
+					<div class="part_principal">
+						<p class="text_principal">
+							Bienvenue à l’hôtel Jardin du Paradis ! Situé dans un cadre chaleureux et élégant, notre hôtel offre tout le confort pour rendre votre séjour inoubliable. Profitez de nos chambres spacieuses, de notre service attentionné et de nos nombreuses commodités. Que ce soit pour un voyage d’affaires ou de loisirs, nous sommes là pour vous accueillir.
+						</p>
+						<div class="btn">
+							<a href="#Reservation" class="btn_1">Reserver</a>
+						</div>
+					</div>
+					<div class="images">
+						<img class="img_1" src="./pictures/hotel_hero_section.jpg" alt="Hotel">
+						<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [Pixabay]. -->
+						<img class="img_1" src="./pictures/hotel_chambre.jpg" alt="Hotel">
+						<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [Pixabay]. -->
+					</div>
+				</div>
+			</div>
+			<aside class="side">
+				<div class="card">
+					<img class="card_img" src="./pictures/Pub_4.jpg" alt="pub">
+					<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [cottonbro studio]. -->
+					<div class="container">
+						<h4><b>pub</b></h4>
+						<p>nouvelle du jour</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card_img" src="./pictures/pub_2.jpg" alt="pub">
+					<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [Alesia Kozik]. -->
+					<div class="container">
+						<h4><b>pub</b></h4>
+						<p>Votre reve maison</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card_img" src="./pictures/pub_3.jpg" alt="pub">
+					<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [AS Photography]. -->
+					<div class="container">
+						<h4><b>pub</b></h4>
+						<p>Ganger une Voiture</p>
+					</div>
+				</div>
+			</aside>
+		</section>
+
+		<!-- Section des services de l'hôtel -->
+		<section class="section_2">
+			<div class="titre_service">
+				<h2>Nos Services</h2>
+			</div>
+			<div class="service">
+				<div class="service_1">
+					<img src="./pictures/spa.jpg" alt="Avatar" style="width:100%">
+					<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [Jill Patience]. -->
+					<div class="container">
+						<p>
+							Découvrez notre spa et piscine à l’hôtel Jardin du Paradis, un espace dédié à la détente et au bien-être. Profitez de soins relaxants, d’un jacuzzi apaisant et d’une piscine chauffée. Que ce soit pour se ressourcer ou simplement se relaxer, notre spa et piscine offrent une expérience unique et inoubliable pour tous.
+						</p>
+					</div>
+				</div>
+				<div class="service_1">
+					<img src="./pictures/hotel_bar.jpg" alt="Avatar" style="width:100%">
+					<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [Pixabay]. -->
+					<div class="container">
+						<p>
+							Le bar et restaurant de l’hôtel Jardin du Paradis vous invitent à une expérience culinaire raffinée. Savourez des plats délicieux préparés avec des ingrédients frais et locaux, accompagnés de cocktails créatifs ou de grands crus. Que ce soit pour un dîner romantique, un repas entre amis ou un apéritif, un moment convivial vous attend.
+						</p>
+					</div>
+				</div>
+				<div class="service_1">
+					<img src="./pictures/gym.jpg" alt="Avatar" style="width:100%">
+					<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [William Choquette]. -->
+					<div class="container">
+						<p>
+							Vous trouverez à l’hôtel Jardin du Paradis une salle de gym moderne, équipée d’appareils de fitness de dernière génération. Cet espace est conçu pour offrir un environnement dynamique et motivant, parfait pour améliorer votre forme physique. De plus, il est accessible à tous les niveaux, que vous soyez débutant ou sportif confirmé.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Section 3 : Formulaire de réservation -->
+	<section id="Reservation" class="section_3">
+		<div class="reservation">
+			<h2>Réservation</h2>
+			<form action="#">
+				<label for="name">Nom complet :</label>
+				<input type="text" id="name" name="name" required placeholder="Entrez votre nom complet">
+				
+				<label for="email">Adresse e-mail :</label>
+				<input type="email" id="email" name="email" required placeholder="Entrez votre adresse e-mail">
+				
+				<label for="check-in">Date d'arrivée :</label>
+				<input type="date" id="check-in" name="check-in" required>
+				
+				<label for="check-out">Date de départ :</label>
+				<input type="date" id="check-out" name="check-out" required>
+				
+				<label for="room-type">Type de chambre :</label>
+				<select id="room-type" name="room-type" required>
+					<option value="" disabled selected>Choisir un type de chambre</option>
+					<option value="single">Chambre individuelle</option>
+					<option value="double">Chambre double</option>
+					<option value="suite">Suite</option>
+				</select>
+				
+				<button type="submit" class="btn_1">Réservez maintenant</button>
+			</form>
+		</div>
+		<aside class="side">
+			<div class="card">
+				<img class="card_img" src="./pictures/Pub_4.jpg" alt="pub">
+				<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [cottonbro studio]. -->
+				<div class="container">
+					<h4><b>pub</b></h4>
+					<p>nouvelle du jour</p>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card_img" src="./pictures/pub_2.jpg" alt="pub">
+				<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [Alesia Kozik]. -->
+				<div class="container">
+					<h4><b>pub</b></h4>
+					<p>Votre reve maison</p>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card_img" src="./pictures/pub_3.jpg" alt="pub">
+				<!-- Cette image a été prise sur Pexels.com, et le nom de l'auteur est [AS Photography]. -->
+				<div class="container">
+					<h4><b>pub</b></h4>
+					<p>Ganger une Voiture</p>
+				</div>
+			</div>
+		</aside>
+	</section>
+
+	<!-- Section du pied de page -->
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer_gauche">
+				<p>&copy; 2024 Hotel Jardin du Paradis. Tous droits réservés.</p>
+			</div>
+			<div class="footer_droit">
+				<ul>
+					<li><a href="ahmad.kabir@eduvaud.ch">Contact Webmaster</a></li>
+					<li><a href="#">Impressum</a></li>
+					<li><a href="#">Conditions d'utilisation</a></li>
+					<li><a href="#">Protection des données</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Script JavaScript pour l'icône hamburger (menu responsive) -->
+	<script>
+		function toggleMenu() {
+			let menuList = document.getElementById("menuList");
+			menuList.classList.toggle("active");
+		}
+	</script>
+</body>
+</html>

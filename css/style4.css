@@ -1,0 +1,379 @@
+/* ---------------------- Global Styles ---------------------- */
+/*Style pour le Page Chambre et Tarif (page PERSO 1)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    background-color: #264653;
+}
+
+/* ---------------------- Styles pour la barre de navigation (Navbar) ---------------------- */
+.navbar {
+    background-color: #22333b;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar .main_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Styles pour Logo */
+.navbar .logo img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid #555;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    transition: max-height 0.3s ease-out;
+}
+
+.navbar .menu > li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar .menu > li > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.navbar .menu > li > a:hover {
+    background-color: #124559;
+    border-radius: 5px;
+}
+
+/* Submenu Styles */
+.navbar .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #124559;
+    list-style: none;
+    padding: 10px;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.navbar .submenu li {
+    margin: 0;
+}
+
+.navbar .submenu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .submenu li a:hover {
+    background-color: #555;
+}
+
+.navbar .menu > li:hover .submenu {
+    display: block;
+}
+
+/* Styles pour l'icône hamburger */
+.menu-icon {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+/* ---------------------- Fin des styles pour la barre de navigation ---------------------- */
+
+/* ---------------------- Styles pour le paragraphe principal ---------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    background-color: #fefae0;
+    color: #22333b;
+    padding: 10px;
+}
+
+.formatted-text {
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fefae0;
+    border-radius: 10px;
+}
+
+/* ---------------------- Fin des styles pour le paragraphe principal ---------------------- */
+
+/* ---------------------- Styles pour la section Table ---------------------- */
+.table-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.text_tarif {
+    background-color: #fefae0;
+    width: 100%;
+}
+
+.text_tarif > h2 {
+    color: #333333;
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fefae0;
+}
+
+thead {
+    background-color: #124559;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* ---------------------- Fin des styles pour la table ---------------------- */
+
+/* ---------------------- Styles pour la section galerie ---------------------- */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    flex: 1;
+}
+
+.gallery-item img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.gallery-item h3 {
+    font-size: 20px;
+    color: #fefae0;
+    margin: 5px 0;
+}
+
+/* ---------------------- Fin des styles pour la section galerie ---------------------- */
+
+/* ---------------------- Styles pour la section anchors ---------------------- */
+.text_gallerie {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fefae0;
+    color: #333333;
+}
+
+.anchors h4 {
+    text-align: center;
+    color: #fefae0;
+}
+
+.anchors ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.anchors ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.anchors ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.anchors h2 {
+    text-align: center;
+    color: #fefae0;
+}
+
+/* ---------------------- Fin des styles pour la section anchors ---------------------- */
+
+/* ---------------------- Styles pour le pied de page ---------------------- */
+.footer {
+    background-color: #22333b;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_gauche {
+    font-size: 16px;
+}
+
+.footer_droit ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer_droit li {
+    display: inline;
+}
+
+.footer_droit a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer_droit a:hover {
+    color: #0056b3;
+}
+
+/* ---------------------- Fin des styles pour le pied de page ---------------------- */
+
+/* ---------------------- Responsive Styles ---------------------- */
+@media screen and (max-width: 768px) {
+    /* Styles pour la barre de navigation responsive */
+    .navbar .main_menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar .logo img {
+        max-width: 70px;
+        height: auto;
+        border-radius: 50%;
+        border: 1px solid #555;
+    }
+
+    .navbar .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        overflow-y: auto;
+        max-height: 0;
+        background-color: #22333b;
+    }
+
+    .navbar .menu.active {
+        max-height: 600px;
+    }
+
+    .navbar .menu > li {
+        width: 100%;
+        padding: 10px;
+        background-color: #22333b;
+        text-align: center;
+    }
+
+    .navbar .menu > li > a {
+        color: white;
+        font-size: bolder;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar .submenu {
+        display: none;
+        position: static;
+        background-color: #124559;
+        width: 100%;
+    }
+
+    .navbar .menu > li:hover .submenu {
+        display: block;
+    }
+
+    /* Styles responsive pour la galerie */
+    .gallery {
+        flex-direction: column;
+    }
+
+    .formatted-text {
+        width: 85%;
+    }
+
+    .anchors h2 {
+        text-align: center;
+        color: #fefae0;
+    }
+
+    /* Styles responsive pour le pied de page */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left {
+        margin-bottom: 10px;
+    }
+
+    .footer-right ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* ---------------------- Fin des styles responsive ---------------------- */

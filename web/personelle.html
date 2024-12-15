@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page PERSONELLE</title>
+	<link rel="stylesheet" href="../css/style6.css">
+	<link rel="stylesheet" href="../css/style5.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Section de la barre de navigation (Navbar) -->
+	<nav class="navbar">
+		<div class="main_menu">
+			<div class="logo">
+				<a href="../index.html">
+					<img class="logo" src="../pictures/logo.svg" alt="logo du Hotel">
+					<!-- Le logo a été conçu par moi. L'icône de l'arbre a été utilisée gratuitement et sans licence, disponible sur Canva.com -->
+				</a>
+			</div>
+			<div>
+				<ul id="menuList" class="menu">
+					<li><a href="../index.html">Accueil</a></li>
+					<li>
+						<a href="#">Services</a>
+						<ul class="submenu">
+							<li><a href="../web/perso1.html">Chambres & Tarifs (Page PERSO No 1)</a></li>
+							<li><a href="/web/personelle.html">Offre Spécial (Page PERSONELLE)</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">À propos</a>
+						<ul class="submenu">
+							<li><a href="/web/perso2.html">Notre histoire (Page PERSO 2)</a></li>
+							<li><a href="/web/caracteristiques.html">Page CARACTÉRISTIQUES</a></li>
+						</ul>
+					</li>
+					<li><a href="../web/contact.html">Contactez-nous</a></li>
+				</ul>
+				<div class="menu-icon">
+					<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Section des offres spéciales -->
+	<main class="offres-speciales">
+		<!-- Section Hero -->
+		<section class="section-hero">
+			<div class="contenu-hero">
+				<h1>Découvrez Nos Offres Spéciales</h1>
+				<p>Profitez de remises exclusives et d’expériences inoubliables. Réservez dès maintenant!</p>
+				<a href="#offers" class="bouton-cta">Voir Nos Offres</a>
+			</div>
+		</section>
+
+		<!-- Section des cartes d'offres -->
+		<section id="offers" class="section-offres">
+			<div class="carte-offre">
+				<img src="../pictures/hotel_bar.jpg" alt="Romantic Getaway Offer">
+				<div class="details-offre">
+					<h2>Weekend Romantique</h2>
+					<p><strong>Prix:</strong> <span class="prix">CHF 299</span></p>
+					<p>Un séjour romantique pour deux avec <em>dîner aux chandelles</em>, <u>accès au spa</u>, et bien plus. <small>Offre valable du 1er janvier au 30 juillet.</small></p>
+				</div>
+			</div>
+
+			<div class="carte-offre">
+				<img src="../pictures/chambre_3.jpg" alt="Family Offer">
+				<div class="details-offre">
+					<h2>Offre Famille</h2>
+					<p><strong>Prix:</strong> <span class="prix">CHF 399</span></p>
+					<p>Offre spéciale pour les familles: 2 nuits en chambre familiale, <em>visite guidée des attractions locales</em>, et un déjeuner gratuit. 
+						<br><small>Offre valable du 1er janvier au 30 juillet.</small></p>
+				</div>
+			</div>
+
+			<div class="carte-offre">
+				<img src="../pictures/spa.jpg" alt="Spa & Wellness Offer">
+				<div class="details-offre">
+					<h2>Offre Bien-être & Spa</h2>
+					<p><strong>Prix:</strong> <span class="prix">CHF 179</span></p>
+					<p>Un séjour relaxant incluant un <em>massage relaxant</em>, <strong>accès illimité au spa</strong>, et une nuit dans nos chambres luxueuses.
+						<br> <small>Offre valable du 1er janvier au 30 juillet.</small></p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section compte à rebours -->
+		<section class="section-compte-a-rebours">
+			<h2>Offre Spéciale à Durée Limitée!</h2>
+			<p>Ne manquez pas notre offre exclusive. Réservez avant le 30 juillet et bénéficiez d’une <strong>réduction de 20%</strong> sur votre séjour!</p>
+			<div class="compte-a-rebours">
+				<p id="timer">23 : 59 : 59</p><br>
+				<small>Offre valable jusqu'au 30 juillet.</small>
+			</div>
+		</section>
+
+		<!-- Section témoignages -->
+		<section class="section-temoignages">
+			<h2>Avis de Nos Clients</h2>
+			<div class="slider-temoignages">
+				<div class="carte-temoignage">
+					<p>"Séjour incroyable! Le spa était parfait et le service exceptionnel. Nous reviendrons!" - <em>Julie M.</em></p>
+				</div>
+				<div class="carte-temoignage">
+					<p>"Offre de week-end romantique vraiment agréable. Super ambiance et des moments inoubliables." - <em>Marc & Sophie</em></p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section FAQ -->
+		<section class="section-faq">
+			<h2>Questions Fréquentes</h2>
+			<div class="item-faq">
+				<h3>Comment réserver une offre spéciale?</h3>
+				<p>Vous pouvez réserver directement en ligne en cliquant sur le bouton "Réservez Maintenant" à côté de l'offre de votre choix.</p>
+			</div>
+			<div class="item-faq">
+				<h3>Y a-t-il des frais supplémentaires?</h3>
+				<p>Non, il n'y a pas de frais cachés. Le prix indiqué comprend toutes les prestations de l'offre.</p>
+			</div>
+		</section>
+	</main>
+
+	<!-- Section des liens (Anchors) -->
+	<section class="anchors">
+		<h4>Explorez Plus</h4>
+		<ul>
+			<li><a href="/web/perso1.html">Voir nos Tarifs</a></li>
+			<li><a href="../index.html">Page Accueil</a></li>
+			<li><a href="../web/contact.html">Contactez-nous</a></li>
+		</ul>
+	</section>
+
+	<!-- Section du pied de page -->
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer_gauche">
+				<p>&copy; 2024 Hotel Jardin du Paradis. Tous droits réservés.</p>
+			</div>
+			<div class="footer_droit">
+				<ul>
+					<li><a href="ahmad.kabir@eduvaud.ch">Contact Webmaster</a></li>
+					<li><a href="#">Impressum</a></li>
+					<li><a href="#">Conditions d'utilisation</a></li>
+					<li><a href="#">Protection des données</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Script JavaScript pour l'icône hamburger (menu responsive) -->
+	<script>
+		function toggleMenu() {
+			let menuList = document.getElementById("menuList");
+			menuList.classList.toggle("active");
+		}
+	</script>
+</body>
+</html>

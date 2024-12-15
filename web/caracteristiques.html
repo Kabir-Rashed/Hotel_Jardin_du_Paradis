@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page CARACTÉRISTIQUES</title>
+	<link rel="stylesheet" href="../css/style5.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	<style>
+		.embed-container {
+			width: 100%;
+			height: 800px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Section de la barre de navigation (Navbar) -->
+	<nav class="navbar">
+		<div class="main_menu">
+			<div class="logo">
+				<a href="../index.html">
+					<img class="logo" src="../pictures/logo.svg" alt="logo du Hotel">
+					<!-- Le logo a été conçu par moi. L'icône de l'arbre a été utilisée gratuitement et sans licence, disponible sur Canva.com -->
+				</a>
+			</div>
+			<div>
+				<ul id="menuList" class="menu">
+					<li><a href="../index.html">Accueil</a></li>
+					<li>
+						<a href="#">Services</a>
+						<ul class="submenu">
+							<li><a href="../web/perso1.html">Chambres & Tarifs (Page PERSO No 1)</a></li>
+							<li><a href="/web/personelle.html">Offre Spécial (Page PERSONELLE)</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">À propos</a>
+						<ul class="submenu">
+							<li><a href="/web/perso2.html">Notre histoire (Page PERSO 2)</a></li>
+						</ul>
+					</li>
+					<li><a href="../web/contact.html">Contactez-nous</a></li>
+				</ul>
+				<div class="menu-icon">
+					<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Section Contenu Principal -->
+	<main>
+        <!-- Embed PDF -->
+        <embed src="/medias/Kabir_Ahmad_Rashed.pdf" type="application/pdf" class="embed-container">
+        
+        <!--Téléchargement du fichier pdf -->
+        <p style="text-align: center; margin-top: 20px; color: aliceblue;">
+            Si vous souhaitez télécharger le document, cliquez ici : 
+            <a href="/medias/Kabir_Ahmad_Rashed.pdf" download style="color: antiquewhite;">Télécharger le PDF</a>
+        </p>
+	</main>
+
+	<!-- Section Pied de Page -->
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer_gauche">
+				<p>&copy; 2024 Hotel Jardin du Paradis. Tous droits réservés.</p>
+			</div>
+			<div class="footer_droit">
+				<ul>
+					<li><a href="mailto:ahmad.kabir@eduvaud.ch">Contact Webmaster</a></li>
+					<li><a href="#">Impressum</a></li>
+					<li><a href="#">Conditions d'utilisation</a></li>
+					<li><a href="#">Protection des données</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Script JavaScript pour l'icône hamburger (menu responsive) -->
+	<script>
+		function toggleMenu() {
+			let menuList = document.getElementById("menuList");
+			menuList.classList.toggle("active");
+		}
+	</script>
+</body>
+</html>
